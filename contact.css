@@ -1,0 +1,143 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background-color: #050000; /* Header background color */
+    color: white; /* Text color */
+    padding: 10px 0; /* Spacing above and below */
+}
+
+header .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack items vertically */
+    text-align: center;
+}
+
+/* Flexbox for Header Content */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Limit the container width */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Logo Styling */
+.logo img {
+    width: 100px; /* Adjust logo size */
+    height: 100px;
+}
+
+/* Company Name */
+.company-name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    flex: 1; /* Allows the name to take up the center space */
+    text-align: left;
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Space between navigation items */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f0a500; /* Highlight color on hover */
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 0;
+    background: #9bb3ee;
+    text-align: center;
+}
+
+.contact h1,
+.contact p {
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+/* Social Media */
+.social-media a {
+    margin: 0 10px;
+    color: #c67728;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+
+/* Google Map */
+.map {
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background: #040000;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 30px;
+}
+
+footer nav ul {
+    list-style: none;
+}
+
+footer nav ul li {
+    display: inline;
+    padding: 0 20px;
+}
+
+footer a {
+    color: #77aaff;
+    text-decoration: none;
+}

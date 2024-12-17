@@ -1,0 +1,210 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Header */
+header {
+    background-color: #050000; /* Header background color */
+    color: white; /* Text color */
+    padding: 10px 0; /* Spacing above and below */
+}
+
+header .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack items vertically */
+    text-align: center;
+}
+
+/* Flexbox for Header Content */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Limit the container width */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Logo Styling */
+.logo img {
+    width: 100px; /* Adjust logo size */
+    height: 100px;
+}
+
+/* Company Name */
+.company-name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    flex: 1; /* Allows the name to take up the center space */
+    text-align: left;
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Space between navigation items */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f0a500; /* Highlight color on hover */
+}
+
+/* About Section */
+.about-section {
+    padding: 3rem 0;
+    background-color: #b3b8f9;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #000408;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #060000;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.about-item {
+    background: #afd7f5;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    flex: 1 1 calc(30% - 2rem);
+    min-width: 280px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-in-out;
+}
+
+.about-item h3 {
+    color: #0a0000;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.about-item p {
+    font-size: 1rem;
+    color: #0c0000;
+}
+
+/* Team Section */
+.team-section {
+    background-color: #b9cefc;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.team-section h2 {
+    font-size: 2.5rem;
+    color: #00070e;
+    margin-bottom: 1rem;
+}
+
+.team-section p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #000000;
+}
+
+.team-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.team-member {
+    flex: 1 1 calc(25% - 1.5rem);
+    background: #bacbfa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-in-out;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.team-member h3 {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.3rem;
+    color: #080000;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #090000;
+    margin-bottom: 1rem;
+}
+
+/* Scroll Animation */
+.about-item.visible,
+.team-member.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Footer */
+footer {
+    background: #070000;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
